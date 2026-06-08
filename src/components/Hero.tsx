@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { Search, MapPin, DollarSign, Compass, Filter } from 'lucide-react';
+import { IMAGES } from '../data';
 
 interface HeroProps {
   onFilterChange: (filters: {
@@ -68,7 +69,7 @@ export default function Hero({ onFilterChange, selectedCategory }: HeroProps) {
         {/* Architectural House / Luxury Villa Background with high-density fixed alignment */}
         <div 
           style={{ 
-            backgroundImage: `url('/src/assets/images/hero_villa_1780838898037.png')`,
+            backgroundImage: `url(${IMAGES.heroVilla})`,
           }}
           className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-100"
           id="hero-fixed-background"

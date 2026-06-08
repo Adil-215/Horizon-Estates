@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Landmark, Gem, Coins, Zap, Sparkles } from 'lucide-react';
+import bgImage from '../assets/images/modern_apartments_1780921598192.png';
 
 interface Benefit {
   id: string;
@@ -54,7 +55,7 @@ export default function WhyChooseUs() {
       {/* Stationary/Fixed Modern House Background Image - Fully clear with no tint */}
       <div 
         style={{ 
-          backgroundImage: `url('/src/assets/images/modern_apartments_1780921598192.png')`,
+          backgroundImage: `url(${bgImage})`,
         }}
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed pointer-events-none"
       />

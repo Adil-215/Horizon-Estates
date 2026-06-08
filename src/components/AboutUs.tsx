@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { Landmark, Compass, Eye, Shield, Users, Trophy, Award, MapPin } from 'lucide-react';
+import aboutVillaImg from '../assets/images/about_villa_1780917791506.png';
 
 interface Pillar {
   id: string;
@@ -60,7 +61,7 @@ export default function AboutUs() {
         {/* Architectural House / Luxury Villa Background with stationary bg-fixed alignment matching the main hero */}
         <div 
           style={{ 
-            backgroundImage: `url('/src/assets/images/about_villa_1780917791506.png')`,
+            backgroundImage: `url(${aboutVillaImg})`,
           }}
           className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed opacity-100"
         />

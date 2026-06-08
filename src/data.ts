@@ -5,12 +5,17 @@
 
 import { Property, Hotspot } from './types';
 
-// Hardcoded paths to our generated beautiful high-res images
+// Import our generated beautiful high-res images to enable correct build-time compilation
+import heroVillaImg from './assets/images/hero_villa_1780838898037.png';
+import inlinePreviewImg from './assets/images/inline_preview_1780838918159.png';
+import propertyOnyxImg from './assets/images/property_onyx_1780838940275.png';
+import propertyZenImg from './assets/images/property_zen_1780838973390.png';
+
 export const IMAGES = {
-  heroVilla: '/src/assets/images/hero_villa_1780838898037.png',
-  inlinePreview: '/src/assets/images/inline_preview_1780838918159.png',
-  propertyOnyx: '/src/assets/images/property_onyx_1780838940275.png',
-  propertyZen: '/src/assets/images/property_zen_1780838973390.png',
+  heroVilla: heroVillaImg,
+  inlinePreview: inlinePreviewImg,
+  propertyOnyx: propertyOnyxImg,
+  propertyZen: propertyZenImg,
   propertyHorizon: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
   propertyOceanus: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
   propertyMonolith: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
