@@ -1,0 +1,65 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-scroll-drip: drip 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  --animate-slide-up-fade: slideUpFade 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom extra utility micro animations */
+@keyframes drip {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUpFade {
+  0% {
+    transform: translate(-50%, 15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbars styling for dark-mode premium containers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 211, 252, 0.30);
+}

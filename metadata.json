@@ -1,0 +1,6 @@
+{
+  "name": "Horizon Estates",
+  "description": "Experience living beyond expectations. A premium, high-fidelity dark tech showcase of ultra-exclusive architectural masterpieces, featuring interactive tours, collection curation, and immersive detail overlays.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
